@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="CSS/justValidateTooltip.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="CSS/normalize.css">
+ <link rel="stylesheet" href="CSS/choices.min.css">
+  <link rel="stylesheet" href="CSS/slyle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="check">
+      <h1 class="exercise1">Категории:</h1>
+    <form action="" class="form1">
+      <label for="check">
+        <input type="checkbox" name="check" id="check">
+        Динозавры
+        <span></span>
+      </label>
+      <label for="check1">
+        <input  type="checkbox" name="check" id="check1">
+        Медведи
+        <span></span>
+      </label>
+      <label for="check2">
+        <input  type="checkbox" name="check" id="check2">
+        Косули
+        <span></span>
+      </label>
+      <label for="check3">
+        <input type="checkbox" name="check" id="check3">
+        Лисы
+        <span></span>
+      </label>
+      <label for="check4">
+        <input type="checkbox" name="check" id="check4">
+        Волки
+        <span></span>
+      </label>
+      <label for="check5">
+        <input  type="checkbox" name="check" id="check5" class="click5">
+        Олени и лоси 
+        <span></span>
+      </label>
+    </form>  
+
+    </div>
+      <select class="select" id="custom-select">
+        <option value="">Материал</option>
+        <option value="1">Древесина</option>
+        <option value="2">Металл</option>
+        <option value="3">Камень</option>
+        <option value="4">Пластик</option>
+        <option value="5">Композитный</option>
+        <option value="6">Гипс</option>
+      </select>
+  
+
+  <div class="exercise3">
+    <div id="map" style="width: 600px; height: 400px"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+          var myMap = new ymaps.Map("map", {
+              center: [55.75518322767627,37.611833637512184],
+              zoom: 15
+          });
+var myPlacemark = new ymaps.Placemark([55.75518322767627,37.611833637512184], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: 'img/Subtract.svg',
+    iconImageSize: [30, 42],
+    iconImageOffset: [-3, -42]
+});
+myMap.geoObjects.add(myPlacemark); 
+      }
+  </script>
+  </div>
+
+  <div class="exercise4">
+    <div class="customScroll" data-simplebar>
+  Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+    </div>
+  </div>
+
+  <div class="exercise5">
+  <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+    <label class="ladelex5" for="name">Как вас зовут?</label>
+    <div class="just-validate-tooltip-container"> 
+    <input
+    name="Имя*" 
+    type="name"
+    placeholder="Имя*"
+    data-validate-field="name">
+  </div>
+    <label class="ladelex5" for="tel">Укажите ваш телефон</label>
+    <div class="just-validate-tooltip-container">
+    <input
+    name="tel" 
+    type="tel"
+    placeholder="Телефон*"
+    data-validate-field="phone"
+    data-validate-rules="phone">
+  </div>
+    <label class="ladelex5" for="email">Укажите ваш e-mail</label>
+    <div class="just-validate-tooltip-container">
+    <input
+    name="email" 
+    type="email"
+    placeholder="E-mail*"
+    data-validate-field="email">
+  </div>
+  <button class="button">
+    Заказать
+  </button>
+  </form>
+</div>
+<div class="exercise6">
+  <div class="info">
+    Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+  <div class="tooltip">
+      <div class="marker" tabindex="0"></div>
+      <div class="popup">Глава 2, страница 176</div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/just-validate.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/choices.min.js"></script>  
+<script src="js/index.js"></script>
+</body>
+</html>

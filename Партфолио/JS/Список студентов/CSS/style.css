@@ -1,0 +1,10 @@
+.error .input {
+  border-color: red;
+}
+.error-lable {
+  display: block;
+  color: red;
+}
+th {
+  cursor: pointer;
+}

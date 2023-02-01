@@ -1,0 +1,25 @@
+.card {
+    border: 2px dashed crimson;
+    background-color: #bfbfbf;
+    display: inline-block;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.card__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.card__descr {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    max-width: 70%;
+}
+.card__btn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+}
